@@ -1,0 +1,67 @@
+.container {
+    margin: 0 auto;
+    padding: 0 10px;
+    max-width: 750px;
+}
+
+
+.header {
+    margin: 45px 0;
+}
+
+.logo {
+    font-family: 'Crete Round', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 34px;
+    line-height: 43px;
+    color: #060C31;
+
+}
+/*------------------------------------*/
+.main {
+    padding: 45px 0 0 0;
+}
+.world {
+
+}
+.world__header {
+    font-family: 'Crete Round', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 58px;
+    line-height: 64px;
+}
+.world__text {
+    margin: 40px 0;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 28px;
+}
+/*-------------*/
+.button,.buttonLite {
+    width: 156px;
+    height: 50px;
+    border-radius: 50px;
+    border: 0px ;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 0 10px;
+}
+.button {
+    background-color: #233FE2;
+    color: #FFFFFF;
+    transition: top 1s ease-out 2s;
+}
+.button:hover {
+    background-color: #060C31;
+}
+.buttonLite {
+    border: 1px solid #FFB0B1;
+    color: #060C31;
+}
+
