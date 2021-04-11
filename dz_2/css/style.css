@@ -1,0 +1,53 @@
+.header {
+    padding: 60px;
+    position: sticky;
+}
+
+.logo {
+    width: 58px;
+    height: 25px;
+}
+
+.nav {
+    display: inline-block;
+    float: right;
+}
+
+.nav__links {
+    display: inline-block;
+}
+
+.nav__link {
+    display: inline-block;
+    margin-right: 40px;
+}
+
+.link {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 28px;
+    text-decoration: none;
+    color: #060C31;
+}
+
+.button {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 14px 22px;
+    border-radius: 50px;
+}
+
+.button__lite {
+    background-color: #FFFFFF;
+    border: 1px solid #FFB0B1;
+    color: #060C31;
+}
+
+.button__lite:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+}
