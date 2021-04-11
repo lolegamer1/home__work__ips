@@ -1,6 +1,41 @@
+/*----------------Button----------------*/
+.button {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 14px 22px;
+    border-radius: 50px;
+}
+
+.button__lite {
+    background-color: #FFFFFF;
+    border: 1px solid #FFB0B1;
+    color: #060C31;
+}
+
+.button__dark {
+    background-color: #233FE2;
+    color: #FFFFFF;
+}
+
+.button__lite:hover, .button__dark:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+}
+
+.indent__button {
+    margin-right: 20px;
+}
+
+/*-----------------header-----------------*/
+
 .header {
     padding: 60px;
     position: sticky;
+    top: 0;
+    left: 0;
 }
 
 .logo {
@@ -32,22 +67,51 @@
     color: #060C31;
 }
 
-.button {
+/*-------------------post-------------------*/
+.post {
+    margin-left: auto;
+    float: right;
+    padding: 0 60px 0 0;
+}
+
+.post__list {
+    display: inline-block;
+    max-width: 450px;
+    vertical-align: middle;
+}
+
+.post__header {
+    font-family: 'Crete Round', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 58px;
+    line-height: 64px;
+    margin-bottom: 42px;
+}
+
+.post__text {
     font-family: 'Lato', sans-serif;
     font-style: normal;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 15px;
-    text-decoration: none;
-    padding: 14px 22px;
-    border-radius: 50px;
+    line-height: 28px;
+    margin-bottom: 76px;
 }
 
-.button__lite {
-    background-color: #FFFFFF;
-    border: 1px solid #FFB0B1;
-    color: #060C31;
+.main__img {
+    vertical-align: middle;
 }
 
-.button__lite:hover {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+/*--------------footer-------------------------*/
+.footer {
+    padding: 60px;
+    float: right;
+}
+
+.footer__logo {
+    margin-right: 100px;
+}
+
+.footer__logo:last-child {
+    margin-right: 0;
 }
