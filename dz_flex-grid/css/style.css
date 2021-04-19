@@ -1,0 +1,148 @@
+/*rezerv {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+*/
+* {
+    box-sizing: border-box;
+}
+.container {
+    max-width: 1135px;
+    margin: 0 auto;
+
+}
+
+.button {
+    box-sizing: border-box;
+    padding: 20px 40px;
+    border-radius: 5px;
+    background-color: #05090C;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    text-decoration: none;
+}
+.pink__header {
+    color: #EE58B6;
+}
+.header>.container {
+    max-width: 1680px;
+    padding: 0;
+}
+.header__row {
+    display: flex;
+    padding: 30px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__link {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    margin-right: 90px;
+    color: #000000;
+}
+.move>.container {
+    max-width: 1680px;
+    padding: 0 58px;
+}
+.move__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 70px 0 ;
+}
+
+.move__header {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 100px;
+    line-height: 122.35%;
+    margin-bottom: 46px;
+}
+.move__text {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 120%;
+    margin-bottom: 66px;
+}
+.advice {
+    background-color: #000000;
+}
+.advice__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 100px 0;
+    grid-gap: 0 86px;
+}
+.advice__card {
+    text-align: center;
+}
+.advice__img {
+    margin-bottom: 25px;
+}
+.advice__text {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 120%;
+    color: #FFFFFF;
+}
+.deadline__row {
+    display: flex;
+    align-items: center;
+    padding: 30px 0 ;
+    justify-content: space-between;
+}
+.deadline__header {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 48px;
+    margin-bottom: 25px;
+}
+.deadline__text {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 135%;
+}
+.cards__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px 30px;
+    padding: 0 0 150px;
+}
+.cards__header {
+    padding: 60px 0;
+    text-align: center;
+    grid-area: 1 / 1 / 2 / 4;
+}
+.cards__header h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 59px;
+}
+.cards__card {
+    background-color:  #000000;
+    border-radius: 7px;
+    padding: 40px;
+}
+.cards__img {
+    margin-bottom: 20px;
+}
+.cards__text {
+    color: #FFFFFF;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+}
