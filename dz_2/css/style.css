@@ -43,7 +43,6 @@
     top: 0;
     left: 0;
     background-color: #FFFFFF;
-    align-items: center;
 }
 
 .logo {
@@ -54,6 +53,7 @@
 .nav {
     display: inline-block;
     float: right;
+    vertical-align: middle;
 }
 
 .nav__links {
