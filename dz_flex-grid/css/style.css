@@ -6,7 +6,6 @@
 .container {
     max-width: 1135px;
     margin: 0 auto;
-
 }
 
 .button {
@@ -15,10 +14,7 @@
     border-radius: 5px;
     background-color: #05090C;
     color: #FFFFFF;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 16px;
+    font: 600 16px 'Montserrat', sans-serif;
     text-decoration: none;
 }
 
@@ -40,39 +36,30 @@
 
 .header__link {
     text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font: 500 16px 'Montserrat', sans-serif;
     margin-right: 90px;
     color: #000000;
 }
 
 .move > .container {
     max-width: 1680px;
-    padding: 0 58px;
 }
 
 .move__row {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 70px 0;
+    padding: 70px 30px;
 }
 
 .move__header {
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 100px;
+    font: 600 100px 'Montserrat', sans-serif;
     line-height: 122.35%;
     margin-bottom: 46px;
 }
 
 .move__text {
-    font-family: 'Roboto Condensed', sans-serif;
-    font-weight: 300;
-    font-size: 26px;
+    font: 300 26px 'Roboto Condensed', sans-serif;
     line-height: 120%;
     margin-bottom: 66px;
 }
@@ -97,9 +84,7 @@
 }
 
 .advice__text {
-    font-family: 'Roboto Condensed', sans-serif;
-    font-weight: normal;
-    font-size: 22px;
+    font: normal 22px 'Roboto Condensed', sans-serif;
     line-height: 120%;
     color: #FFFFFF;
 }
@@ -112,16 +97,12 @@
 }
 
 .deadline__header {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 48px;
+    font: 500 48px 'Montserrat', sans-serif;
     margin-bottom: 25px;
 }
 
 .deadline__text {
-    font-family: 'Roboto Condensed', sans-serif;
-    font-weight: normal;
-    font-size: 18px;
+    font: normal 18px 'Roboto Condensed', sans-serif;
     line-height: 135%;
 }
 
@@ -139,9 +120,7 @@
 }
 
 .cards__header h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 48px;
+    font: 500 48px 'Montserrat', sans-serif;
     line-height: 59px;
 }
 
@@ -157,9 +136,160 @@
 
 .cards__text {
     color: #FFFFFF;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
+    font: normal 18px 'Roboto Condensed', sans-serif;
     line-height: 21px;
+}
+
+.forms {
+    background-color: #000000;
+
+}
+
+.forms > .container {
+    max-width: 1680px;
+}
+
+.forms__row {
+    text-align: center;
+    padding: 60px 0 290px 0;
+}
+
+.forms__form {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.forms__header {
+    padding-top: 125px;
+    text-align: center;
+    font: 500 48px 'Montserrat', sans-serif;
+    color: #FFFFFF;
+}
+
+.forms__input {
+    cursor: pointer;
+    font: 500 18px 'Montserrat', sans-serif;
+    padding: 20px 28px;
+    border-radius: 4px;
+    border: 1.6px solid #C0C0C0;
+}
+
+.forms__button {
+    background-color: #000000;
+    border: 3px solid #FFFFFF;
+    border-radius: 4px;
+}
+
+/*----------------------checkbox-----------------------------*/
+.forms__checkbox {
+    grid-area: 2 / 1 / 3 / 3;
+    display: flex;
+    align-items: center;
+}
+
+.forms__custom-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.forms__custom-checkbox + label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+
+.forms__custom-checkbox + label::before {
+    content: '';
+    cursor: pointer;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #adb5bd;
+    border-radius: 0.25em;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+
+.forms__custom-checkbox:checked + label::before {
+    border-color: #ee58b6;
+    background-color: #ee58b6;
+    background-image: url("../images/checked.png");
+}
+
+/* стили при наведении курсора на checkbox */
+.forms__custom-checkbox:not(:disabled):not(:checked) + label:hover::before {
+    border-color: #ee58b6;
+}
+
+/* стили для активного состояния чекбокса (при нажатии на него) */
+.forms__custom-checkbox:not(:disabled):active + label::before {
+    background-color: #ee58b6;
+    border-color: #ee58b6;
+}
+
+/* стили для чекбокса, находящегося в фокусе */
+.forms__custom-checkbox:focus + label::before {
+    box-shadow: 0 0 0 0.2rem rgb(238, 88, 182);
+}
+
+/* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+.forms__custom-checkbox:focus:not(:checked) + label::before {
+    border-color: #ffbfeb;
+}
+
+/* стили для чекбокса, находящегося в состоянии disabled */
+.forms__custom-checkbox:disabled + label::before {
+    background-color: #ee58b6;
+}
+
+/*----------------------/checkbox-----------------------------*/
+
+.forms__checkbox-text {
+    font: normal 16px 'Roboto Condensed', sans-serif;
+    color: #FFFFFF;
+    margin-left: 8px;
+}
+
+.author {
+    text-align: center;
+    padding: 120px 0;
+}
+
+.author__photo {
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.author__name {
+    font: 500 26px 'Montserrat', sans-serif;
+    margin-bottom: 10px;
+}
+
+.author__comment {
+    font: normal 18px 'Roboto Condensed', sans-serif;
+    margin-bottom: 24px;
+}
+
+.author__description {
+    margin: 0 auto 43px;
+    max-width: 630px;
+    font: normal 18px 'Roboto Condensed', sans-serif;
+}
+
+.author__link-img {
+    width: 48px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.footer {
+    background-color: #000000;
+    text-align: center;
+    padding: 35px 0;
 }
