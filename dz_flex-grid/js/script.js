@@ -23,7 +23,6 @@ function setAnimatedBlockLoaded() {
                 animatedBlock.classList.add('loaded');
                 reached = true;
             }
-
         }
     })
 }
