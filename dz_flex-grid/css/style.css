@@ -17,7 +17,13 @@
     font: 600 16px 'Montserrat', sans-serif;
     text-decoration: none;
 }
-
+.header {
+    opacity: 0;
+    transition: opacity 1.5s ease-out;
+}
+.loaded .loaded-animation {
+    opacity: 1;
+}
 .pink__header {
     color: #EE58B6;
 }
@@ -44,7 +50,10 @@
 .move > .container {
     max-width: 1680px;
 }
-
+.move {
+    opacity: 0;
+    transition: opacity 1.5s ease-out 1.5s;
+}
 .move__row {
     display: flex;
     align-items: center;
@@ -71,12 +80,22 @@
 .advice__row {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 100px 0;
+    padding: 60px 0;
     grid-gap: 0 86px;
 }
 
 .advice__card {
     text-align: center;
+    opacity: 0;
+}
+.advice__card_animation-time_3s{
+    transition: opacity 1s ease-out 3s;
+}
+.advice__card_animation-time_3-5s{
+    transition: opacity 1s ease-out 3.5s;
+}
+.advice__card_animation-time_4s{
+    transition: opacity 1s ease-out 4s;
 }
 
 .advice__img {
