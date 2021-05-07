@@ -17,13 +17,16 @@
     font: 600 16px 'Montserrat', sans-serif;
     text-decoration: none;
 }
+
 .header {
     opacity: 0;
     transition: opacity 1.5s ease-out;
 }
+
 .loaded .loaded-animation {
     opacity: 1;
 }
+
 .pink__header {
     color: #EE58B6;
 }
@@ -50,10 +53,12 @@
 .move > .container {
     max-width: 1680px;
 }
+
 .move {
     opacity: 0;
     transition: opacity 1.5s ease-out 1.5s;
 }
+
 .move__row {
     display: flex;
     align-items: center;
@@ -88,14 +93,16 @@
     text-align: center;
     opacity: 0;
 }
-.advice__card_animation-time_3s{
+
+.advice__card_animation-time_3s {
     transition: opacity 1s ease-out 3s;
 }
-.advice__card_animation-time_3-5s{
+
+.advice__card_animation-time_3-5s {
     transition: opacity 1s ease-out 3.5s;
 }
 
-.advice__card_animation-time_4s{
+.advice__card_animation-time_4s {
     transition: opacity 1s ease-out 4s;
 }
 
@@ -108,6 +115,7 @@
     line-height: 120%;
     color: #FFFFFF;
 }
+
 .deadline {
     display: flex;
     align-items: center;
@@ -115,16 +123,7 @@
     justify-content: space-between;
 }
 
-.deadline:nth-child(1) {
-    opacity: 0;
-    transform: translateX(-100px);
-    transition: transform 1s ease-out,
-                opacity 1s ease-out;
-}
-.loaded:nth-child(1) {
-    opacity: 1;
-    transform: translateX(0);
-}
+
 .deadline__header {
     font: 500 48px 'Montserrat', sans-serif;
     margin-bottom: 25px;
@@ -135,6 +134,52 @@
     line-height: 135%;
 }
 
+/*--------------animation-deadline---------------------------*/
+.deadline__list_animation_right {
+    opacity: 0;
+    transform: translateX(200px);
+    transition: all 1s ease-out;
+}
+
+#animatedBlock.loaded .deadline__list_animation_right {
+    opacity: 1;
+    transform: none;
+}
+
+.deadline__img_animation_left {
+    opacity: 0;
+    transform: translateX(-200px);
+    transition: all 1s ease-out;
+}
+
+#animatedBlock.loaded .deadline__img_animation_left {
+    opacity: 1;
+    transform: none;
+}
+.deadline__list_animation_left {
+    opacity: 0;
+    transform: translateX(-200px);
+    transition: all 1s ease-out;
+}
+
+#animatedBlock.loaded .deadline__list_animation_left {
+    opacity: 1;
+    transform: none;
+}
+
+.deadline__img_animation_right {
+    opacity: 0;
+    transform: translateX(200px);
+    transition: all 1s ease-out;
+}
+
+#animatedBlock.loaded .deadline__img_animation_right {
+    opacity: 1;
+    transform: none;
+}
+
+
+/*-----------------------------------------*/
 .cards__row {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
