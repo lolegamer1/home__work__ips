@@ -13,7 +13,7 @@
     <title>Flex-Grid</title>
 </head>
 <body>
-<header class="header loaded-animation">
+<!-- <header class="header animation">
     <div class="container">
         <header class="header__row">
             <img src="images/logo.png" alt="" class="header__img">
@@ -25,9 +25,9 @@
             </nav>
         </header>
     </div>
-</header>
+</header> -->
 <main class="main">
-    <section class="move loaded-animation">
+    <section class="move animation">
         <div class="move__row container">
             <div class="move__list">
                 <h1 class="move__header">Не <span class="pink__header">делай</span> это</h1>
@@ -35,20 +35,22 @@
                 </p>
                 <a href="#" class="button">Записаться на курс</a>
             </div>
-            <img src="images/relax.png" alt="" class="move__img">
+            <div class="image__row">
+              <img src="images/relax.png" alt="" class="move__img">
+            </div>
         </div>
     </section>
     <section class="advice">
         <div class="advice__row container">
-            <div class="advice__card advice__card_animation-time_3s loaded-animation">
+            <div class="advice__card advice__card_animation-time_3s animation">
                 <img src="images/time.png" alt="" class="advice__img">
                 <p class="advice__text">Для тех, у кого слишком много идей и слишком мало времени</p>
             </div>
-            <div class="advice__card advice__card_animation-time_3-5s loaded-animation">
+            <div class="advice__card advice__card_animation-time_3-5s animation">
                 <img src="images/notebook.png" alt="" class="advice__img">
                 <p class="advice__text">Метод «списка не дел», который позволит успевать и реализовывать</p>
             </div>
-            <div class="advice__card advice__card_animation-time_4s loaded-animation">
+            <div class="advice__card advice__card_animation-time_4s animation">
                 <img src="images/target.png" alt="" class="advice__img">
                 <p class="advice__text">Курс научит творческих людей сосредоточиваться</p>
             </div>
@@ -119,7 +121,7 @@
                     </select>
                     <button class="button forms__button">Записаться на курс</button>
                     <div class="forms__checkbox">
-                        <input type="checkbox" name="agreement" id="checkbox" class="forms__custom-checkbox" checked
+                        <input type="checkbox" name="agreement" id="checkbox" class="forms__custom-checkbox"
                                value="yes">
                         <label for="checkbox" class="forms__checkbox-text">Согласен получать информационные материалы о
                             старте курса</label>
