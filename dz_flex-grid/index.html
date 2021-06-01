@@ -57,8 +57,10 @@
         </div>
     </section>
     <section id="animatedBlock" class="section-list">
-        <div class="deadline container">
-            <img src="images/finances.png" alt="" class="deadline__img deadline__img_animation_left">
+        <div class="deadline container deadline-reverse">
+            <div class="deadline__img-wrapper">
+              <img src="images/finances.png" alt="" class="deadline__img deadline__img_animation_left">
+            </div>
             <div class="deadline__list deadline__list_animation_right">
                 <h2 class="deadline__header">Ты не успеешь</h2>
                 <p class="deadline__text">Всех творческих людей объединяет одна проблема - отсутствие времени на
@@ -70,11 +72,12 @@
                 <h2 class="deadline__header">Опять дедлайн</h2>
                 <p class="deadline__text">В мире, где столько всего интересного, когда же успевать жить?</p>
             </div>
-            <img src="images/cringe.png" alt="" class="deadline__img deadline__img_animation_right">
+            <div class="deadline__img-wrapper">
+              <img src="images/cringe.png" alt="" class="deadline__img deadline__img_animation_right">
+            </div>
         </div>
     </section>
-    <section class="cards">
-        <div class="container">
+    <section class="cards container">
             <div class="cards__header">
                 <h2>На курсе ты <span class="pink__header">сможешь</span></h2>
             </div>
@@ -105,7 +108,6 @@
                     <p class="cards__text">Оптимизировать общение с клиентами и проведение совещаний.</p>
                 </div>
             </div>
-        </div>
     </section>
     <section class="forms">
         <div class="container">
@@ -125,7 +127,6 @@
                                value="yes">
                         <label for="checkbox" class="forms__checkbox-text">Согласен получать информационные материалы о
                             старте курса</label>
-
                     </div>
                 </form>
             </div>

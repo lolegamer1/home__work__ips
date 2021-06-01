@@ -129,6 +129,18 @@
     justify-content: space-between;
 }
 
+.deadline__img-wrapper {
+  max-width: 50%;
+}
+
+.deadline__img {
+  width: 100%;
+  height: auto;
+}
+
+.deadline__list {
+  max-width: 50%;
+}
 
 .deadline__header {
     font: 500 48px 'Montserrat', sans-serif;
@@ -136,6 +148,7 @@
 }
 
 .deadline__text {
+
     font: normal 18px 'Roboto Condensed', sans-serif;
     line-height: 135%;
 }
@@ -374,9 +387,10 @@
     padding: 35px 0;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1100px) {
   .container {
-    padding: 0 30px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   .move {
@@ -395,7 +409,18 @@
     padding: 50px 10px;
     grid-gap: 30px;
   }
+  .forms__form {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+  }
+  .forms__row {
+    padding-bottom: 125px;
+  }
+  .forms__checkbox {
+      grid-area: 4 / 1 / 5 / 2;
+  }
 }
+
 @media screen and (max-width: 768px) {
   .advice__row {
     grid-template-columns: 1fr;
@@ -404,14 +429,43 @@
     grid-gap: 30px;
   }
   .advice__card {
-
     margin: 0 auto;
     max-width: 300px;
+  }
+  .deadline {
+    flex-direction: column;
+    padding: 30px 0px;
+  }
+  .deadline__header {
+    font-size: 36px;
+  }
+  .deadline-reverse {
+    flex-direction: column-reverse;
+  }
+  .cards__row {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .cards__card {
+    padding: 30px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .cards__row {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+  }
+  .forms__header {
+    font-size: 38px;
+  }
+  .forms__row {
+    padding: 50px 0;
   }
 }
 @media screen and (max-width: 320px) {
   .container {
-    padding: 0 10px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .move {
     padding: 50px 0px;
@@ -425,4 +479,8 @@
   .advice__row {
     padding: 30px 10px;
   }
+  .deadline {
+    padding: 30px 0px;
+  }
+
 }
