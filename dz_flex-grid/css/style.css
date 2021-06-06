@@ -175,13 +175,12 @@
     transition: all 1s ease-out;
 }
 
-
 /*-----------------------------------------*/
 .cards__row {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
-    padding: 0 0 150px;
+    padding: 0 0 100px;
 }
 
 .cards__header {
@@ -209,6 +208,79 @@
     color: #FFFFFF;
     font: normal 18px 'Roboto Condensed', sans-serif;
     line-height: 21px;
+}
+
+/*--------accord------------*/
+.accord {
+  margin: 0 auto;
+  max-width: 720px;
+  padding: 50px 0;
+}
+.accord__header {
+  text-align: center;
+  font: 500 48px 'Montserrat', sans-serif;
+}
+.acor-container {
+    margin: 20px 0;
+}
+.acor-container .acor-body {
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    height: 0;
+    color: #000000;
+    background-color: #FFFFFF;
+    line-height: 18px;
+    padding: 0 30px;
+    box-sizing: border-box;
+    transition: color 0.5s, padding 0.5s;
+    overflow: hidden;
+    font-family: Verdana, sans-serif;
+    font-size: 16px;
+    border-bottom: solid 1px;
+}
+.acor-container .acor-body p {
+    margin: 0 0 10px;
+}
+.acor-container label {
+    cursor: pointer;
+    background-color: #FFFFFF;
+    display: block;
+    padding: 15px 20px;
+    width: 100%;
+    color: #000000;
+    font-weight: 300;
+    box-sizing: border-box;
+    z-index: 100;
+    font-family: Verdana, sans-serif;
+    font-size: 18px;
+    margin: 0 0 5px;
+    transition: color .35s;
+}
+.acor-container label:hover {
+    color: #000000;
+}
+.acor-container input{
+    display: none;
+}
+.acor-container label:before {
+    color: #D30085;
+    content: '\276F';
+    float: right;
+}
+.acor-container input:checked + label {
+    background-color: #FFFFFF;
+    color: #000000;
+
+}
+.acor-container input:checked + label:before {
+    transition: transform .35s;
+    transform: rotate(90deg);
+}
+.acor-container input:checked + label + .acor-body {
+    height: auto;
+    margin-top: -5px;
+    color: #000;
+    padding: 20px 30px 10px;
 }
 
 .forms {
@@ -435,7 +507,7 @@
   }
 
   .cards__row {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     padding-bottom: 100px;
   }
