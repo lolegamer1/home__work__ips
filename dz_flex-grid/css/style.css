@@ -267,8 +267,12 @@
     display: none;
 }
 .acor-container label:before {
-    color: #D30085;
-    content: '\276F';
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-image: url("../images/cross.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     float: right;
 }
 .acor-container input:checked + label {
@@ -278,7 +282,7 @@
 }
 .acor-container input:checked + label:before {
     transition: transform .35s;
-    transform: rotate(90deg);
+    transform: rotate(45deg);
 }
 .acor-container input:checked + label + .acor-body {
     height: auto;
