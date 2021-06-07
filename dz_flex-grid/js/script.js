@@ -40,9 +40,9 @@ function scrollToStart(event) {
 }
 
 const windowOuterWidth = window.outerWidth;
-const burgerTrigger = document.querySelector('.burger');
-const navTrigger = document.querySelector('.header__nav');
-console.log(windowOuterWidth);
+const burgerTrigger = document.getElementById('burger');
+const navTrigger = document.getElementById('navTrigger');
+console.log(burgerTrigger);
 burgerTrigger.addEventListener('click',function(event) {
-  navTrigger.classList.tоggle('adaptiv_higt');
+  navTrigger.classList.toggle('adaptiv_higt');
 });
