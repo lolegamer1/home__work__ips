@@ -46,3 +46,9 @@ console.log(burgerTrigger);
 burgerTrigger.addEventListener('click',function(event) {
   navTrigger.classList.toggle('adaptiv_higt');
 });
+
+const crossActiv = document.querySelectorAll('stick');
+console.log(crossActiv);
+burgerTrigger.addEventListener('click',function(event) {
+  crossActiv.classList.toggle('burger_cross');
+});

@@ -43,6 +43,19 @@ visibility: hidden;
   height: 10px;
   border-radius: 20px;
   background-color: rgba(238, 88, 182, 1);
+  transition: transform 0.2s ease-out;
+}
+
+.burger_cross.stick_up {
+  transform: rotate(45deg);
+}
+
+.burger_cross.stick_down {
+  transform: rotate(-45deg);
+}
+
+.burger_cross.stick_center {
+  visibility: hidden;
 }
 
 .header {
