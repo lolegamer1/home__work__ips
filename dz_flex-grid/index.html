@@ -15,8 +15,13 @@
 <body>
 <header class="header animation container">
         <div class="header__row">
-            <img src="images/logo.png" alt="" class="header__img">
-            <nav class="header__nav">
+              <img src="images/logo.png" alt="" class="header__img">
+              <div id="burger" class="burger">
+                <div class="stick stick_up"></div>
+                <div class="stick stick_center"></div>
+                <div class="stick stick_down"></div>
+              </div>
+            <nav id="navTrigger" class="header__nav adaptiv_higt">
                 <a href="#" class="header__link">Что будет на курсе?</a>
                 <a href="#" class="header__link">Вопросы</a>
                 <a href="#" class="header__link">Автор</a>
@@ -176,6 +181,9 @@
         <img src="images/footer-logo.png" alt="" class="footer__logo">
     </a>
 </footer>
+<a href="#" class="scroll__button">
+  <img id="buttonUp" src="images/scroll.png" alt="">
+</a>
 <script src="js/script.js"></script>
 </body>
 </html>
